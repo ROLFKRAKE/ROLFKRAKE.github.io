@@ -1,45 +1,188 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Gustav online</title>
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Oswald|Teko:300,400,700&display=swap" rel="stylesheet">
+    <title>Rolf Krake</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto|Montserrat|Poppins:700|sans-serif" type="text/css">
     <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background:#080808;
-      color:#e3e3e3;
-      font-family:sans-serif;
-      }
+        body {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            background: #222222;
+            color: #c4c4c4;
+            font-family: "Poppins", sans-serif;
+            overflow-x: hidden;
+        }
+        .nav {
+            margin:2em 4em;
+            display: flex;
+            justify-content: space-between; 
+        }
+     
+        .nav div{
+            margin: 0em 2em 0em 2em;
+        }
+        .nav .logo{
+            margin:0em 0em;
+        }
+     
+        .nav div a{
+            padding-right:1em;
+            font-family: sans-serif;
+            opacity:0.8;
+        }
+        .nav div a:hover{
+            cursor: pointer;
+            opacity: .6;
+        }
+        .nav div a:visited,a:active,a:link{
+            text-decoration: none;
+        color:inherit
+        }
 
-      header{
-         margin: 2em 0em;
-      }
-              
-      h1 {
-      font-size:8em;
-      font-weight:800;
-      }
-      .p1 {
-          font-size:2.4em;
+        header{
+            margin:0em 4em;
         }
-      div{
-         margin: 2em 4em 2em 0em; 
+        h1{
+            font-size: 6em;
+            color:#0099ff;
+            margin-top:3em;
+            margin-bottom:0em;
+            font-weight: 700;
         }
-      .thx {
-        margin-top:6em;
-      }
+        header p{
+            font-size:1.4em;
+            margin-top:0em;
+        }
+        section{
+            margin-top:-1em;
+            width:100vw;
+            height:160vh;
+        }
+        .contrast {
+            background: #0099ff;
+            display:grid;
+            grid-template-areas: 
+            "box1" "box2" "box3";
+        }
+        .contrast div{
+            margin:.4em auto;
+            width: 33vw;
+            height: 3vh;
+            color:#080808;
+            font-size:3em;
+        }
+        .contrast p{
+            margin-bottom:0;
+        }
+        .minorp {
+            font-size:.5em;
+            font-family: sans-serif;
+            margin:0
+        }
+        .box1 {
+            grid-area: box1;
+        }
+        .box2{
+            grid-area: box2;
+        }        
+        .box3{
+            grid-area: box3;
+        }
+      
+        .end{
+            height:100vh;
+        }
+        .end p{
+            font-size: 1em;
+        }
+        .kontakt {
+            margin: 2em 4em;
+            font-family: sans-serif;
+            font-weight: lighter; 
+            display: grid;
+            grid-gap: 1em;
+            grid-template-areas: "jag mail quiz"
+        }
+        .kontakt div{
+            width:30vw;
+            height:40vh;
+        }
+        .mailme{
+            background: #0099ff;
+            border-radius: 4px;
+            color:#080808;
+            text-align: center;
+            padding-top:10em;
+            font-family: "Poppins"
+        }
+        .quiz{
+            display:flex;
+        }
+        .quiz button{
+            background:#0099FF;
+            border:none;
+            border-radius: 4px;
+            align-self:center;
+            width:18vw;
+            height:8vh;
+            margin:2em;
+        }
+        .quiz button:hover{
+            opacity:0.8;
+        }
+        .quiz button p{
+            font-size: 1.4em;
+            color:#080808;
+        }
+
     </style>
-    </head>
-    <body>
-        <header>
-            <h1>En nörd till undsättning</h1>
-            <p class="p1">Vill du eller någon ha hjälp med en hemsida?</p>
-        </header>
-      <div>
-        <h2>Hemsidor borde inte kosta 10k.<br>Jag visar vad jag har att erbjuda via kontraster.</h2>
-        <p class="thx">Tack för mig! Skriv till mig på någon social media, jag lära svara snabbt.</p>
-      </div>
-    </body>
+</head>
+<body>
+    <div class="nav">
+        <p class="logo">Rolf Krake</p>
+        <div>
+            <a href="https://dribbble.com/RolfKrake">Dribbble</a>
+            <a href="https://www.behance.net/turbogusta4bb9">Behance</a>
+            <a href="https://www.facebook.com/kungrolfkrake/">Facebook</a>
+        </div>
+    </div>
+    <header>
+    <h1>Smidiga hemsidor</h1>
+    <p>Låt mig visa varför det spelar roll hur en hemsida är designad!</p>
+    <p style="font-size:4em;margin:0em;text-align: center;">👇</p>
+    </header>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,165.3C96,139,192,85,288,96C384,107,480,181,576,218.7C672,256,768,256,864,240C960,224,1056,192,1152,192C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <section class="contrast">
+        <div class="box1">
+            <p>1</p>
+            <p class="minorp">En designad hemsida gör det lättare för besökaren att uppfylla syftet med hemsidan. Är det en hemsida för din portfolio eller är det en hemsida för ditt företag att locka nya kunder?<br><br>Skräm inte bort din besökare, fånga upp istället!</p>
+        </div>
+        <div class="box2">
+            <p>2</p>
+            <p class="minorp">Du kan skrämma bort besökare om du har för många intryck. Ha bara med nödvändig information. Behöver du verkligen 8 bilder på Elvis Presley innan besökaren kan kontakta dig? <br><br>"Ju fler kockar, desto sämre soppa"</p>
+        </div>
+        <div class="box3">
+            <p>3</p>
+            <p class="minorp">Jag är en lärarstudent på 24 år som strävar efter kunskap. Din hemsida kommer inte falla mellan stolarna i 10 år. Hittar jag ett bättre och mer effektivt sätt ska du inte betala något extra.<br><br>Jag uppdaterar mig ständigt inom designvärlden och kan även hjälpa dig med det du behöver.</p>
+        </div>
+
+    </section>
+    <section class="end">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,64L12,85.3C24,107,48,149,72,176C96,203,120,213,144,192C168,171,192,117,216,128C240,139,264,213,288,229.3C312,245,336,203,360,181.3C384,160,408,160,432,165.3C456,171,480,181,504,165.3C528,149,552,107,576,74.7C600,43,624,21,648,48C672,75,696,149,720,165.3C744,181,768,139,792,128C816,117,840,139,864,176C888,213,912,267,936,277.3C960,288,984,256,1008,229.3C1032,203,1056,181,1080,170.7C1104,160,1128,160,1152,154.7C1176,149,1200,139,1224,128C1248,117,1272,107,1296,112C1320,117,1344,139,1368,133.3C1392,128,1416,96,1428,80L1440,64L1440,0L1428,0C1416,0,1392,0,1368,0C1344,0,1320,0,1296,0C1272,0,1248,0,1224,0C1200,0,1176,0,1152,0C1128,0,1104,0,1080,0C1056,0,1032,0,1008,0C984,0,960,0,936,0C912,0,888,0,864,0C840,0,816,0,792,0C768,0,744,0,720,0C696,0,672,0,648,0C624,0,600,0,576,0C552,0,528,0,504,0C480,0,456,0,432,0C408,0,384,0,360,0C336,0,312,0,288,0C264,0,240,0,216,0C192,0,168,0,144,0C120,0,96,0,72,0C48,0,24,0,12,0L0,0Z"></path></svg>
+        <div class="kontakt">
+            <div class="jag">
+                <h2>Gustav Magnusson - en vanlig nörd.</h2>
+                <p>Denna hemsida gjordes med under 200 rader av kod och med gratisprogram.<br>Jag erbjuder introducerande kurser till programmering. <br><b>OBS Under 18 i vårdnadshavares sällskap.</b><br>Förståelse av engelska samt dator är ett krav.</p>
+                <p>Jag har ett år kvar på mina studier. <br>Mina intressen är matlagning, design, motion och personlig utveckling.<br>Jag gillar konst i alla former och tar hand om mina krukväxter.</p>
+            </div>
+            <div class="mailme">Maila mig på turbogustav@hotmail.com istället.</div>
+            <div class="quiz">
+            <button class="Cell"><p>Mobil</p></button>
+            <button class="Comp"><p>Dator</p></button>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
